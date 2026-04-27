@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App</title>
+
+    <!-- Conexión al CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Mi app divertida</h2>  
+
+<button onclick="general()">Haz click</button>
+
+<p id="Resultado"></p>
+
+<script>
+    function general() {
+        let opciones = ['Sí', 'No', 'Tal vez'];
+        let random = Math.floor(Math.random() * opciones.length);
+        document.getElementById('Resultado').innerText = opciones[random];
+    }
+</script>
+
+</body>
+</html>
